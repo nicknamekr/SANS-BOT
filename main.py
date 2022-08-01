@@ -20,7 +20,7 @@ async def sans(ctx):
 async def wa(ctx):
   await ctx.reply('와! 샌즈!\nhttps://imgur.com/a/6eVnYAd')
   
-@bot.command(name = "핑" alias=["ping"])
+@bot.command(name = "핑", alias=["ping"])
 async def ping(ctx):
     await ctx.reply(f'{round(bot.latency * 1000)}ms') 
 
