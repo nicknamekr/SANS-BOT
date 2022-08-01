@@ -6,7 +6,7 @@ intents = discord.Intents.default()
 intents.message_content = True
 
 load_dotenv(verbose=True)
-bot = commands.Bot(command_prefix=["ㅅ", "샍", "샌즈!"])
+bot = commands.Bot(command_prefix=["ㅅ", "샍", "샌즈!"], intents=intents)
 
 @bot.event
 async def on_ready():
